@@ -1,81 +1,70 @@
 body {
 	margin: 0;
-	font-family: 'League Spartan', sans-serif;
+	font-family: 'American Typewriter', sans-serif;
 	font-size: 20px;
 	line-height: 30px;
+	font-weight:bold;
+	color:rosybrown;
 }
-
 /*Header section*/
-
 header{
-	background-color: lightgray;
+	background-image: url(statics/images/4.jpeg);
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-
 header h1{
-	color:  dark;
+	color:  rosybrown;
 	font-size: 50px;
 }
-
 header img{
 	border-radius: 170px;
 	width: 300px;
 	border: 20px solid white;
 }
-
 /*Main section*/
 main{
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 190px;
+	color: rosybrown;
+	background-color: lightgrey;
 }
-
 main img{
 	max-width: 100%;
 }
-
 main h2{
 	font-size: 30px;
 	margin: 40px 0 10px;
 }
-
 main a{
-	color: black;
+	color: rosybrown;
 }
-
 main a:hover{
 	background-color: lightgrey;
-	color: lightskyblue;
+	color: rosybrown;
 }
-
 p.caption{
 	margin-top: 0;
-	color:  grey;
+	color:  rosybrown;
 	font-style: italic;
 	font-size: 20px;
 }
-
 /*Footer section*/
-
 footer{
 	background-color: lightgrey;
 	text-align: center;
 	padding: 50px;
 }
-
 footer p{
 	margin: 0;
-	color:  white;
+	color:  rosybrown;
 	font-size: 20px;
 }
-
 footer a{
-	color: black;
+	color: rosybrown;
 }
-
 footer a:hover{
-	background-color: black;
-	color: black;
+	background-color: rosybrown;
+	color: rosybrown;
 }
