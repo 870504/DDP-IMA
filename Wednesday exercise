@@ -1,0 +1,12 @@
+SELECT * FROM `orders` WHERE category_id = 2 ;
+SELECT * FROM `orders` WHERE category_id in (2,4,5);
+SELECT * FROM `orders` WHERE 'price' > "35";
+SELECT * FROM `orders` WHERE 'date_of_birth' < "01-01-1980";
+SELECT * FROM `orders` WHERE `customer_surname` = 'Davenport' or  `customer_firstname` = 'Davenport';
+SELECT * FROM `orders` WHERE  `customer_firstname` Like '%Br%';
+SELECT * FROM `orders` WHERE `category_id` = 3 ORDER BY `price` DESC;
+SELECT `trans_date` as 'Transaction Date', `price` as 'Price', `promo_code` as 'Promotion Code' FROM `orders`;
+SELECT UPPER(`customer_surname`), LOWER(`customer_firstname`), CONCAT(`customer_firstname`, ' ', `customer_surname`) as 'name', `county` as 'County' FROM `orders`; 
+SELECT `category_id`, AVG(`price`), MIN(`price`),MAX(`price`) FROM `orders` GROUP BY `category_id`;
+SELECT category_name, count(orders.id) as 'Total order', sum(price) as 'Total sales' from orders join categories on (orders.category_id = categories.id) group by category_name 
+SELECT `trans_date`as'Transaction Date',`category_name`as'Category',`customer_surname`as'Surname',`customer_firstname`as'Firstname',`price`as'Order Price',`discount`as'Discounted by' from( `orders`left join`categories`on(`orders`.`category_id` = `categories`.`id`))left join`promotions`on`orders`.`promo_code`=`promotions`.`code`;
